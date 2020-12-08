@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DC</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<section>
+    <div class="circle"></div>
+
+    <header>
+        <a href="#"><img src="assets/logo.png" class="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="content">
+        <div class="textBox">
+            <h2>It's not just the suit<br/>It's the <span>Hero</span></h2>
+            <p>
+                The DC Universe (DCU) is the fictional shared universe where most stories in American comic book titles
+                published by DC Comics take place. DC superheroes such as Superman, Batman, Wonder Woman,
+                Martian Manhunter, The Flash, Green Lantern, Aquaman.
+            </p>
+            <a href="https://en.wikipedia.org/wiki/DC_Universe" target="_blank">Learn more</a>
+        </div>
+        <div class="imgBox">
+            <img src="assets/superhero/batman.png" class="superhero">
+        </div>
+    </div>
+
+    <ul class="thumb">
+        <li>
+            <img src="assets/thumb/batman-thumb.png"
+                 onclick="changeImage('assets/superhero/batman.png');changeCircleColor('#505C7C')">
+        </li>
+        <li>
+            <img src="assets/thumb/superman-thumb.png"
+                 onclick="changeImage('assets/superhero/superman.png');changeCircleColor('#F11712')">
+        </li>
+        <li>
+            <img src="assets/thumb/wonder-woman-thumb.png"
+                 onclick="changeImage('assets/superhero/wonder-woman.png');changeCircleColor('#ECC466')">
+        </li>
+    </ul>
+
+    <ul class="sci">
+        <li><a href="https://www.facebook.com/thedcuniverse/" target="_blank"><img src="assets/sci/facebook.png"></a></li>
+        <li><a href="https://twitter.com/TheDCUniverse" target="_blank"><img src="assets/sci/twitter.png"></a></li>
+        <li><a href="https://www.instagram.com/thedcuniverse" target="_blank"><img src="assets/sci/instagram.png"></a></li>
+    </ul>
+</section>
+
+<script type="text/javascript">
+    function changeImage(newImg) {
+        document.querySelector('.superhero').src = newImg;
+    }
+
+    function changeCircleColor(newColor) {
+        document.querySelector('.circle').style.background = newColor;
+    }
+</script>
+</body>
+</html>
