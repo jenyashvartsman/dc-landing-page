@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DC</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/png" href="assets/logo.png">
@@ -12,7 +13,8 @@
 
     <header>
         <a href="#"><img src="assets/logo.png" class="logo"></a>
-        <ul>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">What's New</a></li>
@@ -64,6 +66,11 @@
 
     function changeCircleColor(newColor) {
         document.querySelector('.circle').style.background = newColor;
+    }
+
+    function toggleMenu() {
+        document.querySelector('.toggle').classList.toggle('active')
+        document.querySelector('.navigation').classList.toggle('active')
     }
 </script>
 </body>
